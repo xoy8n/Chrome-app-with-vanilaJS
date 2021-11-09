@@ -1,95 +1,79 @@
-.hidden {
-  display: none;
+/* font */
+@import url("//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.530/neodgm/style.css");
+
+/* CSS */
+@import "css/reset.css";
+
+/* Custom properties */
+:root {
+  --white: #fff;
+  --dark-clr: #504f4f;
+  --accent-clr: #00cc90;
+
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3.6rem;
+  --font-family: "NeoDunggeunmo";
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --margin-sm: 1rem;
+  --margin-md: 2rem;
+  --margin-lg: 3rem;
+
+  --section-spacing: 8rem;
+
+  --gap-sm: 1.5rem;
+  --gap-md: 2rem;
+  --gap-lg: 4rem;
 }
-button {
-  outline: 0;
-  border: 0;
+
+html {
+  /* 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "NeoDunggeunmo";
+}
+
+body {
+  transition: background-color 1s, color 1s;
+  height: 100vh;
+  width: 100%;
+  background: url("../img/bg.png") no-repeat center/ cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+}
+
+input {
   background: transparent;
 }
 
-img {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
-  object-fit: cover;
-  opacity: 90%;
-}
-
-h2 {
-  font-size: 150px;
-}
-h1 {
-  font-size: 60px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.txt {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-#weather {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  font-weight: 600;
-}
-#input1 {
-  margin-top: 50px;
-  width: 300px;
-  height: 40px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 3px solid white;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-#input2 {
-  margin-top: 20px;
-  width: 500px;
-  height: 40px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 3px solid white;
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-input::placeholder {
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-
-#btn {
-  display: none;
-}
-#quote {
-  position: absolute;
-  bottom: 30px;
-}
-
-input:focus {
+button,
+input {
+  border: none;
   outline: none;
 }
-#todo-list {
-  font-size: 30px;
+
+button {
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  border: 0;
+  outline: 0;
+  background-color: transparent;
 }
-#todo-list {
-  font-size: 30px;
-  margin: 20px;
-  text-align: center;
-}
-body {
-  overflow-x: hidden;
+
+footer {
+  color: white;
+  position: fixed;
+  bottom: 40px;
 }
