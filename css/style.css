@@ -2,19 +2,23 @@
 @import url("//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@1.530/neodgm/style.css");
 
 /* CSS */
-@import "css/reset.css";
+@import "./reset.css";
+@import "./welcome.css";
+@import "./components/button.css";
 
 /* Custom properties */
 :root {
   --white: #fff;
   --dark-clr: #504f4f;
   --accent-clr: #00cc90;
+  --red: #ff605c;
+  --yellow: #ffbd44;
+  --green: #00ca4e;
 
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
   --font-size-md: 2.4rem;
   --font-size-lg: 3.6rem;
-  --font-family: "NeoDunggeunmo";
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -34,6 +38,7 @@ html {
   /* 10px */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "NeoDunggeunmo";
 }
 
 * {
