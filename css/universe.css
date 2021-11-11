@@ -1,0 +1,30 @@
+.universe {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1.5rem;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+}
+.box {
+  background-color: var(--box-color);
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 1.5rem;
+  margin-top: 12px;
+}
+
+.greeting {
+  height: 9rem;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.greeting-text span {
+  font-size: 30px;
+  z-index: 999;
+}

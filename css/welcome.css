@@ -5,7 +5,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--box-color);
   border-radius: 30px;
   padding: 50px;
   animation: hue 1s infinite alternate;
