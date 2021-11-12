@@ -29,7 +29,8 @@
   --margin-md: 2rem;
   --margin-lg: 3rem;
 
-  --section-spacing: 8rem;
+  --horizontal-spacing: 8rem;
+  --vertical-spacing: 3rem;
 
   --gap-sm: 1.5rem;
   --gap-md: 2rem;
@@ -56,10 +57,10 @@ body {
   object-fit: cover;
   overflow: hidden;
   font-size: var(--font-size-sm);
+  padding: var(--horizontal-spacing) var(--vertical-spacing);
 }
 
 .back {
-  /* padding: 0 var(--section-spacing); */
   display: flex;
   height: 100vh;
   justify-content: center;
