@@ -1,27 +1,42 @@
 .universe {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  column-gap: 1.5rem;
   position: relative;
   height: 100vh;
   width: 100vw;
 }
 .box {
   display: grid;
-  grid-template-rows: 1fr;
+  /* grid-template-rows: 2fr; */
   row-gap: 1.5rem;
   margin-top: 12px;
 }
-
-.greeting {
+.greeting,
+.clock {
   background-color: var(--box-color);
   height: 9rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.greeting {
+  flex-direction: column;
   position: relative;
   line-height: 1.5;
   padding: 20px;
   font-size: var(--font-size-md);
+}
+
+.clock {
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.clock-box {
+  display: flex;
+  font-size: var(--font-size-lg);
 }
