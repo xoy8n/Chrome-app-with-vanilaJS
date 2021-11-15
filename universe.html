@@ -8,55 +8,75 @@
     <script src="./js/greetings.js" defer></script>
     <script src="./js/calendar.js" defer></script>
     <script src="./js/clock.js" defer></script>
+    <script src="./js/weather.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>my universe</title>
   </head>
   <body>
     <div class="universe">
-      <button class="mode"><i class="fas fa-toggle-off"></i></button>
-      <section class="box">
-        <section class="greeting">
-          <div id="mac-btn">
-            <div class="close"></div>
-            <div class="minimize"></div>
-            <div class="maximize"></div>
-          </div>
-          <div class="greeting-text">
-            <span></span>
-          </div>
-          <div class="calendar">
-            <span></span>
-          </div>
+      <div class="universe-left">
+        <button class="mode"></button>
+        <section class="box">
+          <section class="greeting">
+            <div id="mac-btn">
+              <div class="close"></div>
+              <div class="minimize"></div>
+              <div class="maximize"></div>
+            </div>
+            <div class="greeting-text">
+              <span></span>
+            </div>
+            <div class="calendar">
+              <span></span>
+            </div>
+          </section>
+          <section class="clock">
+            <div id="mac-btn">
+              <div class="close"></div>
+              <div class="minimize"></div>
+              <div class="maximize"></div>
+            </div>
+            <div class="clock-box">
+              <div class="hours">
+                <span></span>
+              </div>
+              <div class="colon">
+                <span>:</span>
+              </div>
+              <div class="minutes">
+                <span></span>
+              </div>
+              <div class="colon">
+                <span>:</span>
+              </div>
+              <div class="seconds">
+                <span></span>
+              </div>
+            </div>
+          </section>
+          <section class="weather">
+            <div id="mac-btn">
+              <div class="close"></div>
+              <div class="minimize"></div>
+              <div class="maximize"></div>
+            </div>
+            <div class="weather-city">
+              <span></span>
+            </div>
+            <div class="weather-temp">
+              <span></span>
+            </div>
+            <div class="weather-icon">
+              <img alt="" />
+            </div>
+            <span class="weather-main"></span>
+          </section>
         </section>
-        <section class="clock">
-          <div id="mac-btn">
-            <div class="close"></div>
-            <div class="minimize"></div>
-            <div class="maximize"></div>
-          </div>
-          <div class="clock-box">
-            <div class="hours">
-              <span></span>
-            </div>
-            <div class="colon">
-              <span>:</span>
-            </div>
-            <div class="minutes">
-              <span></span>
-            </div>
-            <div class="colon">
-              <span>:</span>
-            </div>
-            <div class="seconds">
-              <span></span>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <footer class="footer">
-        <span>© 2021. xoy8n. All rights reserved.</span>
-      </footer>
+      </div>
     </div>
+
+    <footer class="footer">
+      <span>© 2021. xoy8n. All rights reserved.</span>
+    </footer>
   </body>
 </html>

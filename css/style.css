@@ -15,7 +15,7 @@
   --red: #ff605c;
   --yellow: #ffbd44;
   --green: #00ca4e;
-  --box-color: rgba(255, 255, 255, 0.6);
+  --box-color: #efefef;
 
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
@@ -57,12 +57,7 @@ body {
   object-fit: cover;
   overflow: hidden;
   font-size: var(--font-size-sm);
-  padding: var(--horizontal-spacing) var(--vertical-spacing);
-}
-
-.back {
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
