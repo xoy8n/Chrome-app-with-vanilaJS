@@ -1,7 +1,24 @@
 .universe {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.universe-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.universe-right {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 50px;
 }
 
 .greeting,
@@ -41,4 +58,17 @@
 .weather-temp,
 .weather-main {
   font-size: var(--font-size-lg);
+}
+
+.to-do,
+.quote {
+  position: relative;
+  background-color: var(--box-color);
+  max-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 50px;
+  max-height: 80%;
 }

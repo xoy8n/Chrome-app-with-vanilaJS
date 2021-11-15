@@ -9,6 +9,7 @@
     <script src="./js/calendar.js" defer></script>
     <script src="./js/clock.js" defer></script>
     <script src="./js/weather.js" defer></script>
+    <script src="./js/todo.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>my universe</title>
   </head>
@@ -16,61 +17,84 @@
     <div class="universe">
       <div class="universe-left">
         <button class="mode"></button>
-        <section class="box">
-          <section class="greeting">
-            <div id="mac-btn">
-              <div class="close"></div>
-              <div class="minimize"></div>
-              <div class="maximize"></div>
-            </div>
-            <div class="greeting-text">
+        <section class="greeting">
+          <div id="mac-btn">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+          </div>
+          <div class="greeting-text">
+            <span></span>
+          </div>
+          <div class="calendar">
+            <span></span>
+          </div>
+        </section>
+        <section class="clock">
+          <div id="mac-btn">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+          </div>
+          <div class="clock-box">
+            <div class="hours">
               <span></span>
             </div>
-            <div class="calendar">
+            <div class="colon">
+              <span>:</span>
+            </div>
+            <div class="minutes">
               <span></span>
             </div>
-          </section>
-          <section class="clock">
-            <div id="mac-btn">
-              <div class="close"></div>
-              <div class="minimize"></div>
-              <div class="maximize"></div>
+            <div class="colon">
+              <span>:</span>
             </div>
-            <div class="clock-box">
-              <div class="hours">
-                <span></span>
-              </div>
-              <div class="colon">
-                <span>:</span>
-              </div>
-              <div class="minutes">
-                <span></span>
-              </div>
-              <div class="colon">
-                <span>:</span>
-              </div>
-              <div class="seconds">
-                <span></span>
-              </div>
-            </div>
-          </section>
-          <section class="weather">
-            <div id="mac-btn">
-              <div class="close"></div>
-              <div class="minimize"></div>
-              <div class="maximize"></div>
-            </div>
-            <div class="weather-city">
+            <div class="seconds">
               <span></span>
             </div>
-            <div class="weather-temp">
-              <span></span>
-            </div>
-            <div class="weather-icon">
-              <img alt="" />
-            </div>
-            <span class="weather-main"></span>
-          </section>
+          </div>
+        </section>
+        <section class="weather">
+          <div id="mac-btn">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+          </div>
+          <div class="weather-city">
+            <span></span>
+          </div>
+          <div class="weather-temp">
+            <span></span>
+          </div>
+          <div class="weather-icon">
+            <img alt="" />
+          </div>
+          <span class="weather-main"></span>
+        </section>
+      </div>
+      <div class="universe-right">
+        <section class="to-do">
+          <div id="mac-btn">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+          </div>
+          <div id="title">
+            <span class="todo-title">TO-do list</span>
+          </div>
+          <form id="todo">
+            <input id="todo-input" type="text" placeholder="+ 해야 할 일" autocomplete="off" autofocus />
+          </form>
+          <ul class="todo-list"></ul>
+        </section>
+        <section class="quote">
+          <div id="mac-btn">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+          </div>
+          <div class="quote-bg"></div>
+          <span></span>
         </section>
       </div>
     </div>

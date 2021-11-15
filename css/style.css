@@ -15,7 +15,7 @@
   --red: #ff605c;
   --yellow: #ffbd44;
   --green: #00ca4e;
-  --box-color: #efefef;
+  --box-color: rgba(255, 255, 255, 0.3);
 
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
