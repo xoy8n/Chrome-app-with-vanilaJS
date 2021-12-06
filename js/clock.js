@@ -2,8 +2,11 @@ const clock = document.querySelector("h2#clock");
 
 function getClock() {
   const date = new Date();
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
   // 콘솔창이 아닌 화면에 보여지게 하기 위해 innerText를 사용
-  clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+  clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
 // website가 로드 되자마자(로드되고 1초후를 기다리지 않고) 매초마다 실행
