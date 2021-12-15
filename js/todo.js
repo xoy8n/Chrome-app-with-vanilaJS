@@ -21,7 +21,6 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault();
-  // input의 현재 value를 새로운 변수에 복사하는 것
   const newTodo = toDoInput.value;
   toDoInput.value = "";
   paintToDo(newTodo);
