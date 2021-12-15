@@ -4,7 +4,8 @@ const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
 
-const toDos = [];
+let toDos = [];
+
 // todo의 array내용을 localStorage에 넣는 것
 function saveToDos() {
   //JSON.stringify는 그 요소가 어떤것이든 string형으로 만들어줌
@@ -46,6 +47,16 @@ function sayHello(item) {
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
-  const parsedToDos = JSON.parse(savedToDos);
-  parsedToDos.forEach((item) => console.log("this is the turn of", item));
+  const parsedToDos = JSON.parse(savedToDos); //string형이 array로 변함
+  toDos = parsedToDos;
+  parsedToDos.forEach(paintToDo);
 }
+
+/* 
+    parsedToDos.forEach((item) => console.log("this is the turn of", item));
+    이렇게 쓰거나 밑처럼 쓰거나 똑같음
+    function sayHello(item) {
+    console.log("this is the turn of", item);
+    }
+ 
+ */
