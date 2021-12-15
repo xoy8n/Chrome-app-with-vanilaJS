@@ -2,17 +2,20 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
 
+function deleteToDo(event) {
+  const li = event.target.parentElement;
+  li.remove();
+}
+
 function paintToDo(newTodo) {
-  // const의 이름은 li(태그이름)으로 할 필요X
-  // li 만들기
   const li = document.createElement("li");
-  // span 만들기
   const span = document.createElement("span");
-  // span을 li 안에 넣기
-  li.appendChild(span);
-  // span 안에 text 넣기
   span.innerText = newTodo;
-  // li에 todolist 변수를 넣기
+  const button = document.createElement("button");
+  button.innerText = "❌";
+  button.addEventListener("click", deleteToDo);
+  li.appendChild(span);
+  li.appendChild(button);
   toDoList.appendChild(li);
 }
 
