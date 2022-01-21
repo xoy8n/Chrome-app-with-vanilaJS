@@ -7,10 +7,10 @@ A clone of the productivity chrome app [Momentum](https://chrome.google.com/webs
 - [x] Clock
 - [x] To Do List
 - [x] Weather
-- [ ] Daily Quote
+- [x] Daily Quote
 - [x] Daily Photo
 - [x] Offline Support
 
 ## Try it out
 
-
+[https://xoy8n.github.io/momentum-clone-2021/](https://xoy8n.github.io/momentum-clone-2021/)
