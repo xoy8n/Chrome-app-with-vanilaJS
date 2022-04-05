@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous" defer></script>
-    <script src="./js/greetings.js" defer></script>
-    <script src="./js/calendar.js" defer></script>
-    <script src="./js/clock.js" defer></script>
-    <script src="./js/weather.js" defer></script>
-    <script src="./js/todo.js" defer></script>
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>my universe</title>
   </head>
@@ -24,10 +20,22 @@
             <div class="maximize"></div>
           </div>
           <div class="greeting-text">
-            <span></span>
+            <span class="code"><</span>
+            <span class="element">name</span>
+            <span class="colon">=</span>
+            <span class="colon">"</span>
+            <span id="username"></span>
+            <span class="colon">"</span>
+            <span class="code">/></span>
           </div>
           <div class="calendar">
-            <span></span>
+            <span class="code"><</span>
+            <span class="element">date</span>
+            <span class="colon">=</span>
+            <span class="colon">"</span>
+            <span id="date"></span>
+            <span class="colon">"</span>
+            <span class="code">/></span>
           </div>
         </section>
         <section class="clock">
@@ -37,6 +45,12 @@
             <div class="maximize"></div>
           </div>
           <div class="clock-box">
+            <span class="code"><</span>
+            <span class="element">time</span>
+            <span class="colon equal">=</span>
+            <div class="colon">
+              <span>"</span>
+            </div>
             <div class="hours">
               <span></span>
             </div>
@@ -52,6 +66,10 @@
             <div class="seconds">
               <span></span>
             </div>
+            <div class="colon">
+              <span>"</span>
+            </div>
+            <span class="code">/></span>
           </div>
         </section>
         <section class="weather">
@@ -61,15 +79,34 @@
             <div class="maximize"></div>
           </div>
           <div class="weather-city">
+            <span class="code"><</span>
+            <span class="element">location</span>
+            <span class="colon">=</span>
+            <span class="colon">"</span>
+            <span id="city"></span>
+            <span class="colon">"</span>
+            <span class="code">/></span>
             <span></span>
           </div>
-          <div class="weather-temp">
+          <div class="column-bottom">
+            <span class="code"><</span>
+            <span class="element">weather</span>
+            <span class="colon">=</span>
+            <span class="colon">"</span>
+
             <span></span>
+            <div class="weather-main">
+              <span id="main"></span>
+            </div>
+            <div class="weather-temp">
+              <span id="temp"></span>
+            </div>
+            <div class="weather-icon">
+              <img id="icon" alt="" />
+            </div>
+            <span class="colon">"</span>
+            <span class="code">/></span>
           </div>
-          <div class="weather-icon">
-            <img alt="" />
-          </div>
-          <span class="weather-main"></span>
         </section>
       </div>
       <div class="universe-right">
@@ -93,6 +130,9 @@
             <div class="minimize"></div>
             <div class="maximize"></div>
           </div>
+          <div id="title">
+            <span>TO-do list</span>
+          </div>
           <div class="quote-bg"></div>
           <span></span>
         </section>
@@ -103,4 +143,9 @@
       <span>© 2021. xoy8n. All rights reserved.</span>
     </footer>
   </body>
+  <script src="./js/greetings.js"></script>
+  <script src="./js/calendar.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/todo.js"></script>
 </html>

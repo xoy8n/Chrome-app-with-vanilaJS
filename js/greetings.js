@@ -2,7 +2,7 @@
 
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const greeting = document.querySelector(".greeting-text span");
+const greeting = document.querySelector(".greeting-text #username");
 
 //뒤로가기 방지 코드
 history.pushState(null, null, location.href);
@@ -19,7 +19,7 @@ function onLoginSubmit() {
 
 // 2. local storage에서 get item 해오기
 function paintGreeting(username) {
-  greeting.innerText = `${username}님의 우주에 오신 것을 환영합니다.`;
+  greeting.innerText = `${username}`;
 }
 
 savedUsername = localStorage.getItem("username");

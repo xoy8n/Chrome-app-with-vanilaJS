@@ -1,6 +1,6 @@
 "use strick";
 
-const calendarText = document.querySelector(".calendar span");
+const calendarText = document.querySelector(".calendar #date");
 
 function getCalendar() {
   const today = new Date();
@@ -12,7 +12,7 @@ function getCalendar() {
   const dayName = today.toLocaleDateString("ko-KR", {
     weekday: "long",
   });
-  calendarText.innerText = `오늘은 ${dateString} ${dayName}입니다.`;
+  calendarText.innerText = `${dateString} ${dayName}`;
 }
 
 getCalendar();

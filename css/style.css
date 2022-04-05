@@ -10,12 +10,17 @@
 /* Custom properties */
 :root {
   --white: #fff;
+  --box-font-clr: #fefefe;
   --dark-clr: #504f4f;
   --accent-clr: #00cc90;
   --red: #ff605c;
   --yellow: #ffbd44;
   --green: #00ca4e;
-  --box-color: rgba(255, 255, 255, 0.3);
+  --box-color: #263238;
+  --neon-blue: #85d2e0;
+  --neon-purple: #c792ea;
+  --neon-green: #c2e88d;
+  --neon-red: #f07178;
 
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;

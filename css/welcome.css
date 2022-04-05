@@ -9,6 +9,7 @@
   border-radius: 30px;
   padding: 50px;
   animation: hue 1s infinite alternate;
+  color: var(--box-font-clr);
 }
 
 .mode {
@@ -45,4 +46,30 @@
 
 #login-form input:focus {
   border-color: black;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 30px;
+  }
+
+  .mode {
+    font-size: var(--font-size-md);
+  }
+  .welcome {
+    padding-top: 20px;
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+  }
+
+  #login-form input {
+    padding: 10px 0px;
+    font-size: var(--font-size-md);
+    margin-top: 20px;
+  }
+
+  #login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--font-size-md);
+  }
 }

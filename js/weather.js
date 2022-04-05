@@ -6,10 +6,10 @@ function getWeatherCurrent(url) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      const city = document.querySelector(".weather-city span");
-      const weatherTemp = document.querySelector(".weather-temp span");
-      const weatherIconImg = document.querySelector(".weather-icon img");
-      const weatherMain = document.querySelector(".weather-main");
+      const city = document.querySelector(".weather-city #city");
+      const weatherTemp = document.querySelector(".weather-temp #temp");
+      const weatherIconImg = document.querySelector(".weather-icon #icon");
+      const weatherMain = document.querySelector(".weather-main #main");
 
       const weatherIcon = data.weather[0].icon;
       const weatherIconUrl = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
