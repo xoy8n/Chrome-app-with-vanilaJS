@@ -22,7 +22,7 @@
           <div class="greeting-text">
             <span class="code"><</span>
             <span class="element">name</span>
-            <span class="colon">=</span>
+            <span class="colon equal">=</span>
             <span class="colon">"</span>
             <span id="username"></span>
             <span class="colon">"</span>
@@ -31,7 +31,7 @@
           <div class="calendar">
             <span class="code"><</span>
             <span class="element">date</span>
-            <span class="colon">=</span>
+            <span class="colon equal">=</span>
             <span class="colon">"</span>
             <span id="date"></span>
             <span class="colon">"</span>
@@ -54,13 +54,13 @@
             <div class="hours">
               <span></span>
             </div>
-            <div class="colon">
+            <div class="clock-colon">
               <span>:</span>
             </div>
             <div class="minutes">
               <span></span>
             </div>
-            <div class="colon">
+            <div class="clock-colon">
               <span>:</span>
             </div>
             <div class="seconds">
@@ -81,20 +81,17 @@
           <div class="weather-city">
             <span class="code"><</span>
             <span class="element">location</span>
-            <span class="colon">=</span>
+            <span class="colon equal">=</span>
             <span class="colon">"</span>
             <span id="city"></span>
             <span class="colon">"</span>
             <span class="code">/></span>
-            <span></span>
           </div>
           <div class="column-bottom">
             <span class="code"><</span>
             <span class="element">weather</span>
-            <span class="colon">=</span>
+            <span class="colon equal">=</span>
             <span class="colon">"</span>
-
-            <span></span>
             <div class="weather-main">
               <span id="main"></span>
             </div>
@@ -117,7 +114,13 @@
             <div class="maximize"></div>
           </div>
           <div id="title">
+            <span class="code"><</span>
+            <span class="element -p">ul</span>
+            <span class="code">></span>
             <span class="todo-title">TO-do list</span>
+            <span class="code"><</span>
+            <span class="element -p">ul</span>
+            <span class="code">/></span>
           </div>
           <form id="todo">
             <input id="todo-input" type="text" placeholder="+ 해야 할 일" autocomplete="off" autofocus />
@@ -131,12 +134,23 @@
             <div class="maximize"></div>
           </div>
           <div id="title">
-            <span>TO-do list</span>
+            <span class="code"><</span>
+            <span class="element">img</span>
+            <span class="class">alt</span>
+            <span class="colon equal">=</span>
+            <span class="colon">"</span>
+            <span class="quote-title img">Our universe</span>
+            <span class="colon">"</span>
+            <span class="code">/></span>
           </div>
           <div class="quote-bg"></div>
           <span></span>
         </section>
       </div>
+      <img class="bg-img jupiter" src="/img/jupiter.png" alt="" />
+      <img class="bg-img star-dark" src="/img/star-dark.png" alt="" />
+      <img class="bg-img star-light" src="/img/star-light.png" alt="" />
+      <img class="bg-img earth" src="/img/earth.png" alt="" />
     </div>
 
     <footer class="footer">

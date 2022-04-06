@@ -4,6 +4,8 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
 
+const quotebox = document.querySelector(".quote");
+
 bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImage);
+document.quotebox.appendChild(bgImage);
