@@ -1,50 +1,42 @@
 const quotes = [
   {
-    quote: "There is nothing in the world so irresistibly contagious as laughter and good humor.",
-    author: "Charles Dickens",
+    quote: "이 무한한 우주의 영원한 침묵이 나를 두려움으로 몰아넣는다.",
+    author: "블레이즈 파스칼",
   },
   {
-    quote: "Love all, trust a few. Do wrong to none.",
-    author: "William Shakespeare",
+    quote: "내게 신이란 우주 만물에 대한 나의 경외감이다.",
+    author: "알버트 아인슈타인",
   },
   {
-    quote: "The nice thing about egotists is that they don't talk about other people.",
-    author: "Lucille S. Harper",
+    quote: "우주상수의 도입은 내 인생 최대의 실수",
+    author: "알버트 아인슈타인",
   },
   {
-    quote: "A man's character may be learned from the adjectives which he habitually uses in conversation.",
-    author: "Mark Twain",
+    quote: "우주는 단 하나의 신전이 있는데 바로 인간의 몸이다.",
+    author: "노발리스",
   },
   {
-    quote: "He has all the virtues I dislike and none of the vices I admire.",
-    author: "Winston Churchill",
+    quote: "나는 우주의 원리가 아름답고 단순할 것이라고 굳게 믿는다.",
+    author: "알버트 아인슈타인",
   },
   {
-    quote: "Our remedies oft in ourselves do lie.",
-    author: "Shakespeare",
+    quote: "우주에 우리 밖에 없다면 엄청난 공간의 낭비.",
+    author: "칼 세이컨",
   },
   {
-    quote: "Golf is a good walk spoiled.",
-    author: "Mark Twain",
-  },
-  {
-    quote: "Marriage is the only adventure open to the cowardly.",
-    author: "Voltaire",
-  },
-  {
-    quote: "Be slow to fall into friendship; but when thou art in, continue firm & constant.",
-    author: "Socrates",
-  },
-  {
-    quote: "The keenest sorrow is to recognize ourselves as the sole cause of all our adversities.",
-    author: "Sophocles",
+    quote: "지구는 우주에 떠 있는 창백한 푸른 점 하나.",
+    author: "칼 세이컨",
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+function getRandom() {
+  const quote = document.querySelector(".quote-text");
+  const author = document.querySelector(".author-text");
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  const randomAuthor = quotes[Math.floor(Math.random() * quotes.length)];
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]; //array는 0부터 시작하므로
+  quote.innerText = randomQuote.quote;
+  author.innerText = randomAuthor.author;
+}
 
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+setInterval(getRandom, 5000);
