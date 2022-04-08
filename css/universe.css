@@ -1,3 +1,4 @@
+/* Desktop */
 .universe {
   width: 100%;
   height: 100vh;
@@ -72,7 +73,7 @@
 .seconds,
 .clock-colon {
   color: var(--neon-green);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 
 .clock-colon {
@@ -86,38 +87,37 @@
 
 .to-do,
 .quote {
-  height: 500px;
+  height: 380px;
   position: relative;
   background-color: var(--box-color);
   display: flex;
   border-radius: 10px;
+  flex-direction: column;
 }
 
 .to-do {
   /* margin-top: -20px; */
-  flex-direction: column;
   overflow-y: auto;
 }
+
 #todo {
-  padding: 100px 20px 0 20px;
+  padding: 30px 20px 0 20px;
 }
 #title {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 40px;
-  left: 10px;
+  padding-top: 50px;
   justify-content: center;
 }
 .todo-list {
   padding: 20px 20px;
 }
 .todo-title {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 .quote-title {
   color: var(--neon-green);
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
 }
 
 .todo-list li {
@@ -177,7 +177,9 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   right: 20px;
 }
-
+.new-todo {
+  font-size: var(--font-size-sm);
+}
 #todo-input {
   color: var(--box-font-clr);
   font-size: var(--font-size-sm);
@@ -202,11 +204,215 @@ input[type="checkbox"]:checked::after {
 .code {
   padding: 0 10px;
 }
-
 .equal {
   margin-right: 10px;
 }
 .class {
   color: var(--neon-purple);
   padding-right: 10px;
+}
+
+.bg-img {
+  position: absolute;
+}
+
+.jupiter {
+  top: 100px;
+  left: 30px;
+  width: 300px;
+  animation: hoverUp 1.3s infinite;
+  /* animation-timing-function: linear; */
+}
+.earth {
+  top: 500px;
+  right: 30px;
+  width: 200px;
+  animation: hoverUp 1s infinite;
+}
+.star-dark {
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: hoverDown 1.8s infinite;
+}
+.star-light {
+  top: 0;
+  left: 200px;
+  width: 70%;
+  animation: hoverUp 2s infinite;
+}
+
+.element.-p {
+  margin: 0;
+  padding: 0;
+}
+
+.quote {
+  background: url(/img/bg5.png) no-repeat center center / cover;
+}
+.quote-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.quote-text {
+  font-size: var(--font-size-md);
+  padding: 0 40px;
+}
+.author-text {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .universe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .universe-right {
+    margin-top: -15rem;
+  }
+  .greeting,
+  .clock,
+  .weather {
+    font-size: var(--font-size-sm);
+    margin-bottom: 10px;
+  }
+  #username,
+  #date,
+  #city,
+  #main,
+  #temp,
+  #icon,
+  .hours,
+  .minutes,
+  .seconds,
+  .clock-colon {
+    font-size: var(--font-size-sm);
+  }
+  #title {
+    padding-top: 50px;
+  }
+  .quote-box {
+    padding-top: 20px;
+  }
+
+  .todo-title,
+  .quote-title {
+    font-size: var(--font-size-sm);
+  }
+  .new-todo,
+  #todo-input,
+  #todo-input::placeholder {
+    font-size: var(--font-size-sm);
+  }
+  .to-do,
+  .quote {
+    height: 200px;
+  }
+
+  .quote-text,
+  .author-text {
+    font-size: var(--font-size-sm);
+    padding: 0 30px;
+  }
+  .footer {
+    bottom: 40px;
+    font-size: var(--font-size-xsm);
+  }
+}
+@media screen and (max-width: 767px) {
+  .universe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .universe-right,
+  .universe-left {
+    max-width: 350px;
+  }
+  .universe-right {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: -15rem;
+  }
+  .greeting,
+  .clock,
+  .weather {
+    font-size: var(--font-size-xsm);
+    margin-bottom: 0;
+  }
+  .to-do {
+    height: 200px;
+  }
+  .quote {
+    display: none;
+  }
+  #username,
+  #date,
+  #city,
+  #main,
+  #temp,
+  #icon,
+  .hours,
+  .minutes,
+  .seconds,
+  .clock-colon {
+    font-size: var(--font-size-xsm);
+  }
+  #title {
+    padding-top: 40px;
+    font-size: var(--font-size-xsm);
+  }
+  #todo {
+    padding: 10px 20px 0 20px;
+  }
+  .todo-title {
+    font-size: var(--font-size-xsm);
+  }
+  .new-todo,
+  #todo-input,
+  #todo-input::placeholder {
+    font-size: var(--font-size-xsm);
+  }
+  .todo-list {
+    padding: 5px 20px;
+  }
+  .todo-list li {
+    padding-bottom: 0;
+  }
+  .jupiter {
+    top: 100px;
+    left: 30px;
+    width: 150px;
+    animation: hoverUp 1.3s infinite;
+  }
+  .earth {
+    top: 400px;
+    right: 30px;
+    width: 150px;
+    animation: hoverUp 1s infinite;
+  }
+  .star-dark {
+    top: 400px;
+    left: 0;
+    width: 350px;
+    animation: hoverDown 1.8s infinite;
+  }
+  .star-light {
+    top: 50px;
+    left: 200px;
+    width: 200px;
+    animation: hoverUp 2s infinite;
+  }
+  .footer {
+    bottom: 60px;
+    font-size: var(--font-size-xsm);
+  }
 }
