@@ -248,7 +248,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .quote {
-  background: url(/img/bg5.png) no-repeat center center / cover;
+  background: url(img/bg5.png) no-repeat center center / cover;
 }
 .quote-box {
   width: 100%;
