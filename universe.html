@@ -10,9 +10,23 @@
     <title>my universe</title>
   </head>
   <body>
+    <div id="popup-wrap" class="hide">
+      <div id="popup">
+        <div class="popup-text">
+          <p>로그아웃 시, to-do list가 삭제됩니다.</p>
+          <p>그래도 로그아웃 하시겠습니까?</p>
+        </div>
+        <div class="popup-btn">
+          <button class="yes">네</button>
+          <button class="no">아니오</button>
+        </div>
+      </div>
+    </div>
+    <div id="logout">
+      <button>logout</button>
+    </div>
     <div class="universe">
       <div class="universe-left">
-        <button class="mode"></button>
         <section class="greeting">
           <div id="mac-btn">
             <div class="close"></div>
@@ -113,6 +127,7 @@
             <div class="minimize"></div>
             <div class="maximize"></div>
           </div>
+
           <div id="title">
             <span class="code"><</span>
             <span class="element -p">ul</span>
@@ -166,4 +181,5 @@
   <script src="./js/todo.js"></script>
   <script src="./js/background.js"></script>
   <script src="./js/quotes.js"></script>
+  <script src="./js/logout.js"></script>
 </html>

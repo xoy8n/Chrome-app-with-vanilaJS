@@ -247,20 +247,17 @@ input[type="checkbox"]:checked::after {
   padding: 0;
 }
 
-.quote {
-  background: url(img/bg5.png) no-repeat center center / cover;
-}
 .quote-box {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 .quote-text {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   padding: 0 40px;
 }
 .author-text {

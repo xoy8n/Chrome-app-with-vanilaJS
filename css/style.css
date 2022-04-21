@@ -6,6 +6,7 @@
 @import "./welcome.css";
 @import "./universe.css";
 @import "./components/button.css";
+@import "./components/popup.css";
 
 /* Custom properties */
 :root {
@@ -85,6 +86,9 @@ button {
   border: 0;
   outline: 0;
   background-color: transparent;
+}
+.quote {
+  background: url("/img/bg5.png") no-repeat center center / cover;
 }
 
 footer {
