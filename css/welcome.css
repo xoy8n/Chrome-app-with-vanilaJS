@@ -7,17 +7,9 @@
   text-align: center;
   background-color: var(--box-color);
   border-radius: 30px;
-  padding: 50px;
+  padding: 70px 30px;
   color: var(--box-font-clr);
   z-index: 80;
-}
-
-.mode {
-  color: rgba(255, 255, 255, 0.8);
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  font-size: var(--font-size-lg);
 }
 
 .welcome {
@@ -36,11 +28,11 @@
 
 #login-form input {
   border: none;
-  /* padding: 15px 0px; */
+  padding: 10px 0px;
   font-size: var(--font-size-lg);
   text-align: center;
-  /* margin-top: 20px; */
-  color: var(--neon-purple);
+  margin-top: 20px;
+  color: var(--neon-green);
 }
 
 #login-form input:not([type="submit"]) {
@@ -54,19 +46,12 @@
 }
 
 #login-form input:focus {
-  border-color: var(--neon-purple);
-}
-#login-form input:hover {
-  animation: hoverUp 0.5s;
+  border-color: var(--neon-green);
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
-    padding: 30px;
-  }
-
-  .mode {
-    font-size: var(--font-size-md);
+    padding: 40px 20px;
   }
   .welcome {
     padding-top: 20px;
@@ -75,8 +60,32 @@
   }
 
   #login-form input {
+    font-size: var(--font-size-md);
+  }
+  #login-form input::placeholder {
     padding: 10px 0px;
     font-size: var(--font-size-md);
-    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 0 9px;
+    padding: 30px 0;
+  }
+
+  .welcome {
+    padding-top: 20px;
+    font-size: var(--font-size-xsm);
+    line-height: 1.5;
+  }
+
+  #login-form input {
+    font-size: var(--font-size-sm);
+    margin-top: 0;
+  }
+  #login-form input::placeholder {
+    color: rgba(199, 146, 234, 0.3);
+    font-size: var(--font-size-sm);
   }
 }
