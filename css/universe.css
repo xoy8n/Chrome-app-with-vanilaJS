@@ -96,7 +96,6 @@
 }
 
 .to-do {
-  /* margin-top: -20px; */
   overflow-y: auto;
 }
 
@@ -136,7 +135,6 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* border: 1px solid black; */
   background-color: var(--green);
   border-radius: 50%;
   cursor: pointer;
@@ -221,7 +219,6 @@ input[type="checkbox"]:checked::after {
   left: 30px;
   width: 300px;
   animation: hoverUp 1.3s infinite;
-  /* animation-timing-function: linear; */
 }
 .earth {
   top: 500px;
@@ -232,12 +229,12 @@ input[type="checkbox"]:checked::after {
 .star-dark {
   top: 0;
   left: 0;
-  width: 100%;
+  width: 70%;
   animation: hoverDown 1.8s infinite;
 }
 .star-light {
   top: 0;
-  left: 200px;
+  right: 100px;
   width: 70%;
   animation: hoverUp 2s infinite;
 }
@@ -317,6 +314,30 @@ input[type="checkbox"]:checked::after {
     font-size: var(--font-size-sm);
     padding: 0 30px;
   }
+  .jupiter {
+    top: 100px;
+    left: 30px;
+    width: 250px;
+    animation: hoverUp 1.3s infinite;
+  }
+  .earth {
+    top: 550px;
+    right: 100px;
+    width: 200px;
+    animation: hoverUp 1s infinite;
+  }
+  .star-dark {
+    top: 500px;
+    left: 100px;
+    width: 600px;
+    animation: hoverDown 1.8s infinite;
+  }
+  .star-light {
+    top: 50px;
+    right: 50px;
+    width: 500px;
+    animation: hoverUp 2s infinite;
+  }
   .footer {
     bottom: 40px;
     font-size: var(--font-size-xsm);
@@ -385,7 +406,7 @@ input[type="checkbox"]:checked::after {
     padding-bottom: 0;
   }
   .jupiter {
-    top: 100px;
+    top: 60px;
     left: 30px;
     width: 150px;
     animation: hoverUp 1.3s infinite;
@@ -404,7 +425,7 @@ input[type="checkbox"]:checked::after {
   }
   .star-light {
     top: 50px;
-    left: 200px;
+    right: 50px;
     width: 200px;
     animation: hoverUp 2s infinite;
   }

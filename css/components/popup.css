@@ -42,7 +42,7 @@ button {
   padding: 20px;
   background-color: var(--box-font-clr);
   border-radius: 20px;
-  width: 25%;
+  width: 30%;
   height: 22%;
   display: flex;
   flex-direction: column;
@@ -67,5 +67,96 @@ button {
   background-color: var(--popup);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #logout {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 70px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--box-color);
+    border-radius: 8px;
+  }
+
+  #logout button {
+    z-index: 9998;
+    color: var(--box-font-clr);
+    font-size: var(--font-size-sm);
+  }
+
+  #popup {
+    /* padding: 0; */
+    background-color: var(--box-font-clr);
+    border-radius: 20px;
+    width: 40%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    color: var(--box-color);
+    font-size: var(--font-size-sm);
+  }
+
+  .popup-btn {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .popup-btn button {
+    font-size: var(--font-size-sm);
+  }
+}
+
 @media screen and (max-width: 767px) {
+  #logout {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 50px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--box-color);
+    border-radius: 8px;
+  }
+
+  #logout button {
+    z-index: 9998;
+    color: var(--box-font-clr);
+    font-size: var(--font-size-xsm);
+  }
+
+  #popup {
+    /* padding: 0; */
+    background-color: var(--box-font-clr);
+    border-radius: 20px;
+    width: 60%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    color: var(--box-color);
+    font-size: var(--font-size-xsm);
+  }
+
+  .popup-btn {
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--font-size-xsm);
+  }
+
+  .popup-btn button {
+    padding: 0;
+    font-size: var(--font-size-xsm);
+  }
 }

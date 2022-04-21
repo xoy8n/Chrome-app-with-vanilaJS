@@ -28,3 +28,15 @@
 .maximize {
   background-color: var(--green);
 }
+
+@media screen and (max-width: 767px) {
+  #mac-btn {
+    width: 4.3rem;
+  }
+  .close,
+  .minimize,
+  .maximize {
+    width: 10px;
+    height: 10px;
+  }
+}
