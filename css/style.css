@@ -1,6 +1,12 @@
 .hidden {
   display: none;
 }
+button {
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+
 img {
   position: absolute;
   width: 100%;

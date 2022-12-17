@@ -18,7 +18,7 @@ function onLoginSubmit(event) {
 //greeting.innerText = `Hello ${savedUsername}`; greeting.classList.remove(HIDDEN_CLASSNAME);가 반복되므로 paintGreetings 함수를 만들어서 반복을 줄여줌
 function paintGreetings(username) {
   //1. paintgreetings는 username이라는 하나의 인자를 받음
-  greeting.innerText = `Good morning, ${username}.`; //2. 비어있는 h1 요소 안에 `Hello${username}`이라는 텍스트를 추가
+  greeting.innerText = `Have a nice day, ${username}.`; //2. 비어있는 h1 요소 안에 `Hello${username}`이라는 텍스트를 추가
   greeting.classList.remove(HIDDEN_CLASSNAME); //3. h1요소로부터 "hidden"이라는 클래스명을 제거
 }
 
