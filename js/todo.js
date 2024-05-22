@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 
 const todoForm = document.querySelector("#todo");
 const todoInput = document.querySelector("#todo-input");

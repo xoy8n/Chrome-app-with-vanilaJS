@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 
 const API_KEY = "696aafc893ad3d047f07b3a9321a508e";
 

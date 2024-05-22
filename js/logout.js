@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 
 const logoutBtn = document.querySelector("#logout");
 

@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 
 const calendarText = document.querySelector(".calendar #date");
 

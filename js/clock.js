@@ -1,4 +1,4 @@
-"use strick";
+"use strict";
 
 const hoursClock = document.querySelector(".hours span");
 const minutesClock = document.querySelector(".minutes span");
